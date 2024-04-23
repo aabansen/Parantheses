@@ -4,7 +4,7 @@
 
 #include "stack.h"
 
-int check_paranthesis(Stack *opening_brackets, char *str)
+int check_parantheses(Stack *opening_brackets, char *str)
 {
 	char brackets[3][2] = {"{}", "()", "[]"};
 	int brackets_size = sizeof(brackets[0]) / sizeof(brackets[0][0]);
@@ -33,20 +33,20 @@ int main()
 		return -1;
 	}
 
-	char paranthesis_str[opening_brackets->capacity];
+	char parantheses_str[opening_brackets->capacity];
 
-	printf("Enter paranthesis: ");
-	scanf("%21s", paranthesis_str);
+	printf("Enter parantheses: ");
+	scanf("%21s", parantheses_str);
 
-	int balanced = check_paranthesis(opening_brackets, paranthesis_str);
+	int balanced = check_parantheses(opening_brackets, parantheses_str);
 
 	if (!balanced)
 	{
-		printf("%s, is not balanced\n", paranthesis_str);
+		printf("%s, is not balanced\n", parantheses_str);
 	}
 	else 
 	{
-		printf("%s, is balanced\n", paranthesis_str);
+		printf("%s, is balanced\n", parantheses_str);
 	}
 
 	free(opening_brackets);

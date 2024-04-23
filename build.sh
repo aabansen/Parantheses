@@ -2,4 +2,4 @@
 
 set -xe
 
-gcc -Wextra -Wall -o paranthesis src/*.c
+gcc -Wextra -Wall -o parantheses src/*.c

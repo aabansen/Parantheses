@@ -17,7 +17,6 @@ int check_parantheses(Stack *opening_brackets, char *str)
 			else if (str[i] == brackets[j][1]) {
 				if (peek(opening_brackets) == brackets[j][0]) pop(opening_brackets);
 			}
-
 		}
 	}
 
